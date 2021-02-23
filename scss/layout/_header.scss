@@ -21,16 +21,7 @@ img {
   max-width: 100%;
   vertical-align: bottom;
 }
-.sp {
-  display: none;
-}
-/* -------------------------------------------
-base
----------------------------------------------- */
 
-/* -------------------------------------------
-header
----------------------------------------------- */
 .inner {
   max-width: 117rem;
   padding-right: 1.5rem;
@@ -40,91 +31,42 @@ header
 .change-color {
   background: #282F35;
 }
+/* -------------------------------------------
+base
+---------------------------------------------- */
+
+/* -------------------------------------------
+header
+---------------------------------------------- */
 
 /* -------------------------------------------
 ハンバーガーメニュー
 ---------------------------------------------- */
-.menu__btn {
-  position: fixed;
-  top: 0;
-  right: 10px;
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  z-index: 90;
-}
-.menu__btn span,
-.menu__btn span:before,
-.menu__btn span:after {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background-color: #ffffff;
-  position: absolute;
-}
-.menu__btn span:before {
-  bottom: 8px;
-}
-.menu__btn span:after {
-  top: 8px;
-}
-
-#menu__btn--check:checked ~ .menu__btn span {
+#header__buger-checkBox:checked ~ .menu__btn span {
   background-color: rgba(255, 255, 255, 0);
   /*メニューオープン時は真ん中の線を透明にする*/
 }
-#menu__btn--check:checked ~ .menu__btn span::before {
+#header__buger-checkBox:checked ~ .menu__btn span::before {
   bottom: 0;
   transform: rotate(45deg);
-}
-#menu__btn--check:checked ~ .menu__btn span::after {
+  transition: all .3s;
+}/* ボタンがタップされたとき三本線を「×」マークにするための記述 */
+#header__buger-checkBox:checked ~ .menu__btn span::after {
   top: 0;
   transform: rotate(-45deg);
+  transition: all .3s;
 }/* ボタンがタップされたとき三本線を「×」マークにするための記述 */
-
-
-#menu__btn--check {
+#header__buger-checkBox {
   display: none;
 }/* チェックボックスを消す */
-
-.menu__sp {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.menu__item--sp {
-  list-style: none;
-}
-.menu__link--sp {
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-size: 2.4rem;
-  box-sizing: border-box;
-  color:#ffffff;
-  text-decoration: none;
-  padding: 2.5rem 0;
-  position: relative;
-}
-
-.menu__content {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 100%;/*leftの値を変更してメニューを画面外へ*/
-  z-index: 80;
-  background: #282F35;
-  transition: all 0.5s;/*アニメーション設定*/
-}
-
-#menu__btn--check:checked ~ .menu__content {
+#header__buger-checkBox:checked ~ .header__buger-menu {
   left: 0;/*メニューを画面内へ*/
 }
+
+
+
+
+
 /* -------------------------------------------
 ハンバーガーメニュー
 ---------------------------------------------- */
@@ -189,18 +131,93 @@ header
     align-items: center;
     margin-left: auto;
     font-size: 1.6rem;
+
+    @include mq(sp){
+      display: none;
+    }
+  }
+
+  &__buger {
+    display: none;
+
+    @include mq(sp){
+      display: block;
+
+      &-btn {
+        position: fixed;
+        top: 0;
+        right: 10px;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+
+        span,span::before,span::after {
+          content: '';
+          display: block;
+          height: 3px;
+          width: 25px;
+          border-radius: 3px;
+          background-color: #ffffff;
+          position: absolute;
+        }
+        span:before {
+          bottom: 8px;
+        }
+        span:after {
+          top: 8px;
+        }
+      }
+    }
+  }
+
+  &__buger-menu {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background: #282F35;
+    transition: all 0.4s;/*メニューが横から出てくる速度設定*/
+  }
+
+  &__list-sp {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }/*メニューを開いた時のリストを中央に*/
+
+  &__buger-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 2.5rem 0;
+    position: relative;
   }
 }
 
-/* margin-left auto と　li+liでmargin-leftが入るので、menuを追加しても崩れない */
-
-// .menu__item+.menu__item {
-//   margin-left: 3rem;
+// .menu__link--sp {
+//   display: block;
+//   width: 100%;
+//   text-align: center;
+//   font-size: 2.4rem;
+//   box-sizing: border-box;
+//   color:#ffffff;
+//   text-decoration: none;
+//   padding: 2.5rem 0;
+//   position: relative;
 // }
-
 /* -------------------------------------------
 header end
 ---------------------------------------------- */
+
 
 // @media screen and (max-width:1199px) {
 //   html {
