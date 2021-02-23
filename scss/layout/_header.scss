@@ -24,6 +24,7 @@ img {
 
 .inner {
   max-width: 117rem;
+  width: calc(100% - 15px);
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   margin: 0 auto;
@@ -145,7 +146,7 @@ header
 
       &-btn {
         position: fixed;
-        top: 0;
+        top: 18px;
         right: 10px;
         display: flex;
         height: 60px;
