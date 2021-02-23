@@ -21,6 +21,9 @@ img {
   max-width: 100%;
   vertical-align: bottom;
 }
+.sp {
+  display: none;
+}
 /* -------------------------------------------
 base
 ---------------------------------------------- */
@@ -126,7 +129,10 @@ header
 ハンバーガーメニュー
 ---------------------------------------------- */
 
-/* モジュール */
+
+/* -------------------------------------------
+モジュール
+---------------------------------------------- */
 .title {
   display: flex;
   align-items: center;
@@ -149,11 +155,10 @@ header
   color: #171717;
   opacity: 0.05;
 }
-/* モジュール */
+/* -------------------------------------------
+モジュール
+---------------------------------------------- */
 
-.sp {
-  display: none;
-}
 
 /* -------------------------------------------
 header
@@ -165,145 +170,150 @@ header
   transition: all .3s;
   z-index: 10;
 
+  &__site-title {
+    font-size: 2.6rem;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: 96px;
+
+    &-item + &-item {
+      margin-left: 3rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 1.6rem;
+  }
 }
 
-.header__menu {
-  display: flex;
-  align-items: center;
-  height: 96px;
-}
-.menu {
-  display: flex;
-  align-items: center;
-}
-.logo {
-  font-size: 2.6rem;
-}
 /* margin-left auto と　li+liでmargin-leftが入るので、menuを追加しても崩れない */
-.menu {
-  margin-left: auto;
-  font-size: 1.6rem;
-}
-.menu__item+.menu__item {
-  margin-left: 3rem;
-}
+
+// .menu__item+.menu__item {
+//   margin-left: 3rem;
+// }
 
 /* -------------------------------------------
 header end
 ---------------------------------------------- */
 
-@media screen and (max-width:1199px) {
-  html {
-      font-size: calc(100vw / 119.9);
-  }
-  .inner {
-      max-width: 110rem;
-  }
-}
+// @media screen and (max-width:1199px) {
+//   html {
+//       font-size: calc(100vw / 119.9);
+//   }
+//   .inner {
+//       max-width: 110rem;
+//   }
+// }
 
-@media screen and (max-width:991px) {
-  html {
-      font-size: calc(100vw / 99.1);
-  }
-  .pc {
-      display: none;
-  }
-  .sp {
-      display: block;
-  }
-  .header__menu {
-      height: 60px;
-  }
-  .hamburger__menu.sp {
-      margin-left: auto;
-  }
-  /* .menu__btn {
-      position: initial;
-  } */
-  .inner {
-      max-width: calc(100% - 4rem);
-  }
-  .card {
-      width: 29rem;
-  }
-  .concept .box {
-      padding-right: 2rem;
-      padding-left: 2rem;
-  }
-}
-@media screen and (max-width:575px) {
-  html {
-      font-size: calc(100vw / 37.5);
-  }
-  .inner {
-      max-width: calc(100% - 15px);
-  }
-  .menu__link--sp {
-      font-size: 1.6rem;
-      padding: 0;
-      margin-bottom: 2rem;
-  }
-  .title {
-      padding-left: 0;
-      margin-bottom: 6.5rem;
-      font-size: 3rem;
-  }
-  .title::after {
-      width: 90px;
-      margin-left: 2.9rem;
-  }
-  .sub-title {
-      font-size: 2rem;
-  }
-  .bg__txt {
-      font-size: 4rem;
-  }
-  .MV__title {
-      font-size: 3.7rem;
-      width: 100%;
-  }
-  .MV__sub-title {
-      font-size: 3rem;
-      width: 28rem;
-      margin-left: auto;
-      margin-right: auto;
-  }
+// @media screen and (max-width:991px) {
+//   html {
+//       font-size: calc(100vw / 99.1);
+//   }
+//   .pc {
+//       display: none;
+//   }
+//   .sp {
+//       display: block;
+//   }
+//   .header__menu {
+//       height: 60px;
+//   }
+//   .hamburger__menu.sp {
+//       margin-left: auto;
+//   }
+//   /* .menu__btn {
+//       position: initial;
+//   } */
+//   .inner {
+//       max-width: calc(100% - 4rem);
+//   }
+//   .card {
+//       width: 29rem;
+//   }
+//   .concept .box {
+//       padding-right: 2rem;
+//       padding-left: 2rem;
+//   }
+// }
+// @media screen and (max-width:575px) {
+//   html {
+//       font-size: calc(100vw / 37.5);
+//   }
+//   .inner {
+//       max-width: calc(100% - 15px);
+//   }
+//   .menu__link--sp {
+//       font-size: 1.6rem;
+//       padding: 0;
+//       margin-bottom: 2rem;
+//   }
+//   .title {
+//       padding-left: 0;
+//       margin-bottom: 6.5rem;
+//       font-size: 3rem;
+//   }
+//   .title::after {
+//       width: 90px;
+//       margin-left: 2.9rem;
+//   }
+//   .sub-title {
+//       font-size: 2rem;
+//   }
+//   .bg__txt {
+//       font-size: 4rem;
+//   }
+//   .MV__title {
+//       font-size: 3.7rem;
+//       width: 100%;
+//   }
+//   .MV__sub-title {
+//       font-size: 3rem;
+//       width: 28rem;
+//       margin-left: auto;
+//       margin-right: auto;
+//   }
 
-  .service__txt {
-      font-size: 2rem;
-  }
+//   .service__txt {
+//       font-size: 2rem;
+//   }
 
-  .concept .box {
-      flex-direction: column;
-      padding-left: 0;
-      padding-right: 0;
-  }
-  .concept__txt {
-      margin-bottom: 2rem;
-  }
-  .concept__txt,
-  .concept__img {
-      width: initial;
-  }
+//   .concept .box {
+//       flex-direction: column;
+//       padding-left: 0;
+//       padding-right: 0;
+//   }
+//   .concept__txt {
+//       margin-bottom: 2rem;
+//   }
+//   .concept__txt,
+//   .concept__img {
+//       width: initial;
+//   }
 
-  .card__box {
-      justify-content: center;
-  }
-  .card {
-      width: 32rem;
-  }
+//   .card__box {
+//       justify-content: center;
+//   }
+//   .card {
+//       width: 32rem;
+//   }
 
 
-  .service .title {
-      margin-left: 1.5rem;
-  }
-  .service__container {
-      flex-direction: column;
-  }
-  .service__box+.service__box {
-      margin-top: 3rem;
-  }
-  .service .bg__txt {
-      margin-right: 1.5rem;
-  }
-}
+//   .service .title {
+//       margin-left: 1.5rem;
+//   }
+//   .service__container {
+//       flex-direction: column;
+//   }
+//   .service__box+.service__box {
+//       margin-top: 3rem;
+//   }
+//   .service .bg__txt {
+//       margin-right: 1.5rem;
+//   }
+// }
