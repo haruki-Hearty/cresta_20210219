@@ -161,3 +161,46 @@
 }
 /* service end
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+/* contact
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.contact {
+  background: url(../../../images/top/contact-bgi@2x.jpg) no-repeat center;
+  background-size: cover;
+}
+.contact .inner {
+  padding-top: 12.8rem;
+  padding-bottom: 8.6rem;
+}
+.contact .title {
+  color: #fff;
+  justify-content: flex-end;
+  margin-bottom: 10rem;
+}
+.contact .title::after {
+  background-color: #fff;
+}
+.contact__txt {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.contact .bg__txt {
+  color: #fff;
+}
+/* contact end
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+/* footer
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.footer {
+  height: 7.9rem;
+  text-align: center;
+  line-height: 7.9rem;
+}
+.copy {
+  font-size: 1.4rem;
+}
+/* footer end
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */

@@ -1,6 +1,8 @@
 @import "../foundation/var";
 
-/* base */
+/* -------------------------------------------
+base
+---------------------------------------------- */
 html {
   font-size: 62.5%;
 }
@@ -19,13 +21,15 @@ img {
   max-width: 100%;
   vertical-align: bottom;
 }
-/* base */
+/* -------------------------------------------
+base
+---------------------------------------------- */
 
 /* -------------------------------------------
 header
 ---------------------------------------------- */
 .inner {
-  max-width: 120rem;
+  max-width: 117rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   margin: 0 auto;
@@ -33,11 +37,10 @@ header
 .change-color {
   background: #282F35;
 }
-/* ベーススタイル
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
-/* ハンバーガーメニュー
-===========================================*/
+/* -------------------------------------------
+ハンバーガーメニュー
+---------------------------------------------- */
 .menu__btn {
   position: fixed;
   top: 0;
@@ -68,7 +71,8 @@ header
 }
 
 #menu__btn--check:checked ~ .menu__btn span {
-  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+  background-color: rgba(255, 255, 255, 0);
+  /*メニューオープン時は真ん中の線を透明にする*/
 }
 #menu__btn--check:checked ~ .menu__btn span::before {
   bottom: 0;
@@ -85,7 +89,6 @@ header
 }/* チェックボックスを消す */
 
 .menu__sp {
-  /* padding: 70px 10px 0; */
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -119,8 +122,9 @@ header
 #menu__btn--check:checked ~ .menu__content {
   left: 0;/*メニューを画面内へ*/
 }
-/* ハンバーガーメニュー
-===========================================*/
+/* -------------------------------------------
+ハンバーガーメニュー
+---------------------------------------------- */
 
 /* モジュール */
 .title {
@@ -145,39 +149,22 @@ header
   color: #171717;
   opacity: 0.05;
 }
-.btn__link {
-  display: inline-block;
-  width: 23.5rem;
-  padding: 1.75rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #171717;
-  border: 2px solid transparent;
-  border-radius: 5.9rem;
-  text-align: center;
-  background-color: #F7D43F;
-  transition: .23s;
-  box-sizing: border-box;
-}
-.btn__link:hover,
-.btn__link:focus {
-  background-color: transparent;
-  border-color: #F7D43F;
-  color: #F7D43F;
-}
 /* モジュール */
+
 .sp {
   display: none;
 }
 
-/* header
-===========================================*/
+/* -------------------------------------------
+header
+---------------------------------------------- */
 
 .header {
   position: fixed;
   width: 100%;
   transition: all .3s;
   z-index: 10;
+
 }
 
 .header__menu {
@@ -201,173 +188,123 @@ header
   margin-left: 3rem;
 }
 
+/* -------------------------------------------
+header end
+---------------------------------------------- */
 
 
-/* header end
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+// @media screen and (max-width:1199px) {
+//   html {
+//       font-size: calc(100vw / 119.9);
+//   }
+//   .inner {
+//       max-width: 110rem;
+//   }
+// }
+
+// @media screen and (max-width:991px) {
+//   html {
+//       font-size: calc(100vw / 99.1);
+//   }
+//   .pc {
+//       display: none;
+//   }
+//   .sp {
+//       display: block;
+//   }
+//   .header__menu {
+//       height: 60px;
+//   }
+//   .hamburger__menu.sp {
+//       margin-left: auto;
+//   }
+//   /* .menu__btn {
+//       position: initial;
+//   } */
+//   .inner {
+//       max-width: calc(100% - 4rem);
+//   }
+//   .card {
+//       width: 29rem;
+//   }
+//   .concept .box {
+//       padding-right: 2rem;
+//       padding-left: 2rem;
+//   }
+// }
+// @media screen and (max-width:575px) {
+//   html {
+//       font-size: calc(100vw / 37.5);
+//   }
+//   .inner {
+//       max-width: calc(100% - 15px);
+//   }
+//   .menu__link--sp {
+//       font-size: 1.6rem;
+//       padding: 0;
+//       margin-bottom: 2rem;
+//   }
+//   .title {
+//       padding-left: 0;
+//       margin-bottom: 6.5rem;
+//       font-size: 3rem;
+//   }
+//   .title::after {
+//       width: 90px;
+//       margin-left: 2.9rem;
+//   }
+//   .sub-title {
+//       font-size: 2rem;
+//   }
+//   .bg__txt {
+//       font-size: 4rem;
+//   }
+//   .MV__title {
+//       font-size: 3.7rem;
+//       width: 100%;
+//   }
+//   .MV__sub-title {
+//       font-size: 3rem;
+//       width: 28rem;
+//       margin-left: auto;
+//       margin-right: auto;
+//   }
+
+//   .service__txt {
+//       font-size: 2rem;
+//   }
+
+//   .concept .box {
+//       flex-direction: column;
+//       padding-left: 0;
+//       padding-right: 0;
+//   }
+//   .concept__txt {
+//       margin-bottom: 2rem;
+//   }
+//   .concept__txt,
+//   .concept__img {
+//       width: initial;
+//   }
+
+//   .card__box {
+//       justify-content: center;
+//   }
+//   .card {
+//       width: 32rem;
+//   }
 
 
-
-
-
-
-
-
-/* contact
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-.contact {
-  background: url(img/contact-bgi@2x.jpg) no-repeat center;
-  background-size: cover;
-}
-.contact .inner {
-  padding-top: 12.8rem;
-  padding-bottom: 8.6rem;
-}
-.contact .title {
-  color: #fff;
-  justify-content: flex-end;
-  margin-bottom: 10rem;
-}
-.contact .title::after {
-  background-color: #fff;
-}
-.contact__txt {
-  margin-bottom: 5rem;
-  font-size: 2rem;
-  color: #fff;
-  text-align: center;
-}
-.contact .bg__txt {
-  color: #fff;
-}
-/* contact end
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-
-/* footer
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-.footer {
-  height: 7.9rem;
-  text-align: center;
-  line-height: 7.9rem;
-}
-.copy {
-  font-size: 1.4rem;
-}
-/* footer end
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-
-@media screen and (max-width:1199px) {
-  html {
-      font-size: calc(100vw / 119.9);
-  }
-  .inner {
-      max-width: 110rem;
-  }
-}
-
-@media screen and (max-width:991px) {
-  html {
-      font-size: calc(100vw / 99.1);
-  }
-  .pc {
-      display: none;
-  }
-  .sp {
-      display: block;
-  }
-  .header__menu {
-      height: 60px;
-  }
-  .hamburger__menu.sp {
-      margin-left: auto;
-  }
-  /* .menu__btn {
-      position: initial;
-  } */
-  .inner {
-      max-width: calc(100% - 4rem);
-  }
-  .card {
-      width: 29rem;
-  }
-  .concept .box {
-      padding-right: 2rem;
-      padding-left: 2rem;
-  }
-}
-@media screen and (max-width:575px) {
-  html {
-      font-size: calc(100vw / 37.5);
-  }
-  .inner {
-      max-width: calc(100% - 15px);
-  }
-  .menu__link--sp {
-      font-size: 1.6rem;
-      padding: 0;
-      margin-bottom: 2rem;
-  }
-  .title {
-      padding-left: 0;
-      margin-bottom: 6.5rem;
-      font-size: 3rem;
-  }
-  .title::after {
-      width: 90px;
-      margin-left: 2.9rem;
-  }
-  .sub-title {
-      font-size: 2rem;
-  }
-  .bg__txt {
-      font-size: 4rem;
-  }
-  .MV__title {
-      font-size: 3.7rem;
-      width: 100%;
-  }
-  .MV__sub-title {
-      font-size: 3rem;
-      width: 28rem;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-  .service__txt {
-      font-size: 2rem;
-  }
-
-  .concept .box {
-      flex-direction: column;
-      padding-left: 0;
-      padding-right: 0;
-  }
-  .concept__txt {
-      margin-bottom: 2rem;
-  }
-  .concept__txt,
-  .concept__img {
-      width: initial;
-  }
-
-  .card__box {
-      justify-content: center;
-  }
-  .card {
-      width: 32rem;
-  }
-
-
-  .service .title {
-      margin-left: 1.5rem;
-  }
-  .service__container {
-      flex-direction: column;
-  }
-  .service__box+.service__box {
-      margin-top: 3rem;
-  }
-  .service .bg__txt {
-      margin-right: 1.5rem;
-  }
-}
+//   .service .title {
+//       margin-left: 1.5rem;
+//   }
+//   .service__container {
+//       flex-direction: column;
+//   }
+//   .service__box+.service__box {
+//       margin-top: 3rem;
+//   }
+//   .service .bg__txt {
+//       margin-right: 1.5rem;
+//   }
+// }
