@@ -8,24 +8,156 @@
   background-size: cover;
   color: #fff;
   height: 100vh;
-  &__inner {
-    width: 117rem;
-    margin: 0 auto;
-  }
-  &__txt {
-    display: inline-block;
-    text-align: center;
-  }
-  &__title {
-    padding-top: 33.8rem;
-    font-size: 7rem;
-    font-weight: bold;
-  }
-  &__sub-title {
-    margin-top: 3.4rem;
-    font-size: 4rem;
-  }
+}
+.MV .inner {
+  padding-bottom: 17.8rem;
+}
+.MV__txt {
+  display: inline-block;
+  text-align: center;
+}
+.MV__title {
+  padding-top: 33.8rem;
+  font-size: 7rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.MV__sub-title {
+  margin-top: 3.4rem;
+  font-size: 4rem;
+  letter-spacing: 0.05em;
+  font-family: 'Noto Serif JP', serif;
 }
 
 /* MV end
 ===========================*/
+
+/* concept
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.concept {
+  text-align: center;
+}
+.concept .inner {
+  padding-top: 12rem;
+  padding-bottom: 7.4rem;
+}
+.title {
+  padding-left: 10rem;
+  margin-bottom: 9.6rem;
+}
+.sub-title {
+  font-size: 3rem;
+}
+.concept .box {
+  display: flex;
+  align-items: center;
+  padding: 6rem 10rem 10rem;
+}
+.concept__txt {
+  width: 44rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 1.875;
+}
+.concept__img {
+  width: 44rem;
+  margin-left: auto;
+}
+.concept .bg__txt {
+  text-align: right;
+}
+/* concept end
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+/* works
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.works {
+  background: url(../../images/top/works-bgi@2x.jpg) no-repeat center;
+  background-size: cover;
+}
+.works .inner {
+  padding-top: 12.4rem;
+  padding-bottom: 8rem;
+}
+.works .title {
+  color: #fff;
+  justify-content: flex-end;
+}
+.works .title::after {
+  background-color: #fff;
+}
+
+/* card */
+.card__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6rem;
+}
+.card {
+  width: 32rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+.card__txt {
+  padding: 3rem 2.1rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 1.875;
+}
+.btn {
+  text-align: center;
+  margin-bottom: 9.7rem;
+}
+/* card end*/
+.works .bg__txt {
+  color: #fff;
+  opacity: 0.1;
+}
+/* works end
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+/* service
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.service .inner {
+  padding-top: 11.8rem;
+  padding-bottom: 8rem;
+}
+.service .container {
+  padding-top: 11.8rem;
+  padding-bottom: 8rem;
+}
+.service__container {
+  display: flex;
+  justify-content: center;
+}
+.service__box {
+  position: relative;
+  width: 100%;
+}
+.service__txt {
+  position: absolute;
+  display: flex;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.service__txt:hover {
+  background: #282F35;
+  opacity: 0.7;
+  transition: .3s;
+}
+.service .bg__txt {
+  text-align: right;
+  margin-top: 10rem;
+}
+/* service end
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
