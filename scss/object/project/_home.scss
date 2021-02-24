@@ -8,25 +8,47 @@
   background-size: cover;
   color: #fff;
   height: 100vh;
-}
-.MV .inner {
-  padding-bottom: 17.8rem;
-}
-.MV__txt {
-  display: inline-block;
-  text-align: center;
-}
-.MV__title {
-  padding-top: 33.8rem;
-  font-size: 7rem;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-}
-.MV__sub-title {
-  margin-top: 3.4rem;
-  font-size: 4rem;
-  letter-spacing: 0.05em;
-  font-family: 'Noto Serif JP', serif;
+
+  & .inner {
+    padding-bottom: 17.8rem;
+
+    @include mq(sp){
+      padding-bottom: 0;
+    }
+  }
+
+  &__txt {
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__title {
+    padding-top: 33.8rem;
+    font-size: 7rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+
+    @include mq(sp){
+      margin-bottom: 6.5rem;
+      padding-top: 23rem;
+      font-size: 3.7rem;
+    }
+  }
+
+  &__sub-title {
+    margin-top: 3.4rem;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-family: 'Noto Serif JP', serif;
+
+    @include mq(sp){
+      width: 27rem;
+      margin: 0 auto;
+      font-size: 3rem;
+      letter-spacing: 0.1em;
+    }
+  }
 }
 
 /* MV end
@@ -36,36 +58,71 @@
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .concept {
   text-align: center;
+
+  .inner {
+    padding-top: 12rem;
+    padding-bottom: 7.4rem;
+  }
+
+  &__title {
+    padding-left: 10rem;
+    margin-bottom: 9.6rem;
+
+    @include mq(sp){
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__sub-title {
+    font-size: 3rem;
+
+    @include mq(sp){
+      font-size: 2rem;
+    }
+  }
+
+  &__box-ly {
+    display: flex;
+    align-items: center;
+    padding: 6rem 10rem 10rem;
+
+    @include mq(sp){
+      flex-direction: column;
+      padding: 0;
+
+    }
+  }
+
+  &__txt {
+    width: 44rem;
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 1.875;
+
+    @include mq(sp){
+      width: initial;
+
+    }
+  }
+
+  .concept__img {
+    width: 44rem;
+    margin-left: auto;
+
+    @include mq(sp){
+      width: 100%;
+
+    }
+  }
+
+  .bg__txt {
+    text-align: right;
+  }
 }
-.concept .inner {
-  padding-top: 12rem;
-  padding-bottom: 7.4rem;
-}
-.title {
-  padding-left: 10rem;
-  margin-bottom: 9.6rem;
-}
-.sub-title {
-  font-size: 3rem;
-}
-.concept .box {
-  display: flex;
-  align-items: center;
-  padding: 6rem 10rem 10rem;
-}
-.concept__txt {
-  width: 44rem;
-  text-align: justify;
-  font-size: 1.6rem;
-  line-height: 1.875;
-}
-.concept__img {
-  width: 44rem;
-  margin-left: auto;
-}
-.concept .bg__txt {
-  text-align: right;
-}
+
+
+
 /* concept end
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
@@ -74,18 +131,28 @@
 .works {
   background: url(../../images/top/works-bgi@2x.jpg) no-repeat center;
   background-size: cover;
+
+  .inner {
+    padding-top: 12.4rem;
+    padding-bottom: 8rem;
+  }
+
+  .title {
+    color: #fff;
+    justify-content: flex-end;
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  .bg__txt {
+    color: #fff;
+    opacity: 0.1;
+  }
 }
-.works .inner {
-  padding-top: 12.4rem;
-  padding-bottom: 8rem;
-}
-.works .title {
-  color: #fff;
-  justify-content: flex-end;
-}
-.works .title::after {
-  background-color: #fff;
-}
+
+
 
 /* card */
 .card__box {
@@ -101,64 +168,64 @@
   width: 32rem;
   margin-bottom: 2rem;
   background-color: #fff;
-}
-.card__txt {
-  padding: 3rem 2.1rem;
-  text-align: justify;
-  font-size: 1.6rem;
-  line-height: 1.875;
-}
-.btn {
-  text-align: center;
-  margin-bottom: 9.7rem;
+
+  &__txt {
+    padding: 3rem 2.1rem;
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
 }
 /* card end*/
-.works .bg__txt {
-  color: #fff;
-  opacity: 0.1;
-}
+
 /* works end
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
 /* service
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-.service .inner {
-  padding-top: 11.8rem;
-  padding-bottom: 8rem;
+.service {
+    padding-top: 11.8rem;
+    padding-bottom: 8rem;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+
+    @include mq(sp){
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    position: relative;
+    width: 100%;
+  }
+
+  &__txt {
+    position: absolute;
+    display: flex;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    &:hover {
+      background: #282F35;
+      opacity: 0.7;
+      transition: .3s;
+    }
+  }
+
+  .bg__txt {
+    text-align: right;
+    margin-top: 10rem;
+  }
 }
-.service .container {
-  padding-top: 11.8rem;
-  padding-bottom: 8rem;
-}
-.service__container {
-  display: flex;
-  justify-content: center;
-}
-.service__box {
-  position: relative;
-  width: 100%;
-}
-.service__txt {
-  position: absolute;
-  display: flex;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-  font-size: 4rem;
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-.service__txt:hover {
-  background: #282F35;
-  opacity: 0.7;
-  transition: .3s;
-}
-.service .bg__txt {
-  text-align: right;
-  margin-top: 10rem;
-}
+
 /* service end
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
@@ -167,28 +234,34 @@
 .contact {
   background: url(../../../images/top/contact-bgi@2x.jpg) no-repeat center;
   background-size: cover;
+
+  .inner {
+    padding-top: 12.8rem;
+    padding-bottom: 8.6rem;
+  }
+
+  .title {
+    color: #fff;
+    justify-content: flex-end;
+    margin-bottom: 10rem;
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  &__txt {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  .bg__txt {
+    color: #fff;
+  }
 }
-.contact .inner {
-  padding-top: 12.8rem;
-  padding-bottom: 8.6rem;
-}
-.contact .title {
-  color: #fff;
-  justify-content: flex-end;
-  margin-bottom: 10rem;
-}
-.contact .title::after {
-  background-color: #fff;
-}
-.contact__txt {
-  margin-bottom: 5rem;
-  font-size: 2rem;
-  color: #fff;
-  text-align: center;
-}
-.contact .bg__txt {
-  color: #fff;
-}
+
 /* contact end
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 
@@ -198,9 +271,11 @@
   height: 7.9rem;
   text-align: center;
   line-height: 7.9rem;
+
+  .copy {
+    font-size: 1.4rem;
+  }
 }
-.copy {
-  font-size: 1.4rem;
-}
+
 /* footer end
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
