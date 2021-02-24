@@ -81,7 +81,7 @@ header
   font-weight: bold;
   font-style: italic;
   letter-spacing: 0.05em;
-
+// sample
   @include mq(sp){
     font-size: 3rem;
   }
