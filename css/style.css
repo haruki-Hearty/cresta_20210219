@@ -167,9 +167,15 @@ img {
 }
 
 .inner {
-  max-width: 117rem;
+  max-width: 120rem;
   width: calc(100% - 15px);
   margin: 0 auto;
+}
+
+.section__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 50px 0;
 }
 
 .change-color {
@@ -192,14 +198,18 @@ header
 
 #header__buger-checkBox:checked ~ .menu__btn span::before {
   bottom: 0;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
 /* ボタンがタップされたとき三本線を「×」マークにするための記述 */
 #header__buger-checkBox:checked ~ .menu__btn span::after {
   top: 0;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -221,8 +231,14 @@ header
 モジュール
 ---------------------------------------------- */
 .title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 6rem;
   font-weight: bold;
   font-style: italic;
@@ -272,8 +288,10 @@ header
 .header {
   position: fixed;
   width: 100%;
+  -webkit-transition: all .3s;
   transition: all .3s;
   z-index: 10;
+  font-style: italic;
   /*メニューを開いた時のリストを中央に*/
 }
 
@@ -282,9 +300,15 @@ header
 }
 
 .header__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  height: 96px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
 }
 
 .header__nav-item + .header__nav-item {
@@ -292,8 +316,14 @@ header
 }
 
 .header__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
   font-size: 1.6rem;
 }
@@ -316,11 +346,20 @@ header
     position: fixed;
     top: 18px;
     right: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     height: 60px;
     width: 60px;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 90;
   }
   .header__buger-btn span, .header__buger-btn span::before, .header__buger-btn span::after {
@@ -349,6 +388,7 @@ header
   /*leftの値を変更してメニューを画面外へ*/
   z-index: 80;
   background: #282F35;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   /*メニューが横から出てくる速度設定*/
 }
@@ -356,7 +396,8 @@ header
 .header__list-sp {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .header__buger-link {
@@ -364,7 +405,8 @@ header
   width: 100%;
   text-align: center;
   font-size: 2.4rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #ffffff;
   text-decoration: none;
   padding: 2.5rem 0;
@@ -388,8 +430,10 @@ header end
   border-radius: 5.9rem;
   text-align: center;
   background-color: #F7D43F;
+  -webkit-transition: .23s;
   transition: .23s;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .btn__link:hover,
@@ -417,10 +461,6 @@ header end
   height: 100vh;
 }
 
-.MV .inner {
-  padding-bottom: 17.8rem;
-}
-
 @media (max-width: 768px) {
   .MV .inner {
     padding-bottom: 0;
@@ -433,7 +473,7 @@ header end
 }
 
 .MV__title {
-  padding-top: 33.8rem;
+  padding-top: 41rem;
   font-size: 7rem;
   font-weight: bold;
   letter-spacing: 0.05em;
@@ -448,7 +488,7 @@ header end
 }
 
 .MV__sub-title {
-  margin-top: 3.4rem;
+  margin-top: 2.2rem;
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: 0.05em;
@@ -470,16 +510,11 @@ header end
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .concept {
   text-align: center;
-}
-
-.concept .inner {
-  padding-top: 12rem;
-  padding-bottom: 7.4rem;
+  padding-bottom: 7rem;
 }
 
 .concept__title {
-  padding-left: 10rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 7.5rem;
 }
 
 @media (max-width: 768px) {
@@ -491,6 +526,7 @@ header end
 
 .concept__sub-title {
   font-size: 3rem;
+  margin-bottom: 6.3rem;
 }
 
 @media (max-width: 768px) {
@@ -500,20 +536,34 @@ header end
 }
 
 .concept__box-ly {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  padding: 6rem 10rem 10rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 7rem;
 }
 
 @media (max-width: 768px) {
   .concept__box-ly {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0;
   }
 }
 
 .concept__txt {
-  width: 44rem;
+  max-width: 44rem;
   text-align: justify;
   font-size: 1.6rem;
   line-height: 1.875;
@@ -526,8 +576,8 @@ header end
 }
 
 .concept .concept__img {
-  width: 44rem;
-  margin-left: auto;
+  max-width: 44rem;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -537,7 +587,10 @@ header end
 }
 
 .concept .bg__txt {
+  max-width: 120rem;
+  margin: 0 auto;
   text-align: right;
+  letter-spacing: .05em;
 }
 
 /* concept end
@@ -556,7 +609,10 @@ header end
 
 .works .title {
   color: #fff;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .works .title::after {
@@ -570,9 +626,17 @@ header end
 
 /* card */
 .card__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
@@ -603,13 +667,23 @@ header end
 }
 
 .service__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 768px) {
   .service__container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -620,20 +694,30 @@ header end
 
 .service__txt {
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   top: 0%;
   width: 100%;
   height: 100%;
   font-size: 4rem;
   color: #fff;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 1;
 }
 
 .service__txt:hover {
   background: #282F35;
   opacity: 0.7;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -658,7 +742,10 @@ header end
 
 .contact .title {
   color: #fff;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-bottom: 10rem;
 }
 
