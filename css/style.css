@@ -168,20 +168,22 @@ img {
 
 .inner {
   max-width: 120rem;
-  width: calc(100% - 4%);
+  width: calc(100% - 8%);
   margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .inner {
-    width: calc(100% - 8%);
-  }
 }
 
 .section__inner {
   max-width: 100rem;
   margin: 0 auto;
   padding: 100px 50px 0;
+}
+
+@media (max-width: 768px) {
+  .section__inner {
+    width: calc(100% - 8%);
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .change-color {
@@ -478,6 +480,12 @@ header end
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .MV__txt {
+    display: block;
+  }
+}
+
 .MV__title {
   padding-top: 41rem;
   font-size: 7rem;
@@ -516,7 +524,18 @@ header end
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .concept {
   text-align: center;
+  padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.concept .sp-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .concept .sp-only {
+    display: block;
+  }
 }
 
 .concept__title {
@@ -526,13 +545,14 @@ header end
 @media (max-width: 768px) {
   .concept__title {
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 5rem;
   }
 }
 
 .concept__sub-title {
   font-size: 3rem;
-  margin-bottom: 6.3rem;
+  max-width: 62rem;
+  margin: 0 auto 6.3rem;
 }
 
 @media (max-width: 768px) {
@@ -578,17 +598,20 @@ header end
 @media (max-width: 768px) {
   .concept__txt {
     width: initial;
+    margin-bottom: 3rem;
   }
 }
 
 .concept .concept__img {
   max-width: 44rem;
   margin: 0;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
   .concept .concept__img {
     width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -608,6 +631,12 @@ header end
   background-size: cover;
   padding-top: 10.4rem;
   padding-bottom: 5.5rem;
+}
+
+@media (max-width: 768px) {
+  .works .inner {
+    width: calc(100% - 8%);
+  }
 }
 
 .works .title {
@@ -662,13 +691,15 @@ header end
 .card {
   width: 32%;
   background-color: #fff;
-  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
   .card {
     width: 100%;
     max-width: 34rem;
+  }
+  .card + .card {
+    margin-top: 2rem;
   }
 }
 
@@ -716,6 +747,7 @@ header end
 
 .service__title {
   max-width: 1000px;
+  width: calc(100% - 8%);
   margin: 0 auto 8rem;
   letter-spacing: .1em;
 }
@@ -751,6 +783,12 @@ header end
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .service__box + .service__box {
+    margin-top: 3rem;
+  }
+}
+
 .service__txt {
   position: absolute;
   display: -webkit-box;
@@ -783,6 +821,7 @@ header end
 
 .service .bg__txt {
   max-width: 1200px;
+  width: calc(100% - 4%);
   margin: 0 auto;
   text-align: right;
   letter-spacing: .05em;

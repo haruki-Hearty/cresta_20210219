@@ -18,6 +18,10 @@
   &__txt {
     display: inline-block;
     text-align: center;
+
+    @include mq(sp){
+      display: block;
+    }
   }
 
   &__title {
@@ -56,19 +60,27 @@
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .concept {
   text-align: center;
+  padding-top: 7rem;
   padding-bottom: 7rem;
+  .sp-only {
+    display: none;
+    @include mq(sp){
+      display: block;
+    }
+  }
   &__title {
     margin-bottom: 7.5rem;
 
     @include mq(sp){
       padding-left: 0;
-      margin-bottom: 0;
+      margin-bottom: 5rem;
     }
   }
 
   &__sub-title {
     font-size: 3rem;
-    margin-bottom: 6.3rem;
+    max-width: 62rem;
+    margin: 0 auto 6.3rem;
 
     @include mq(sp){
       font-size: 2rem;
@@ -95,17 +107,17 @@
 
     @include mq(sp){
       width: initial;
-
+      margin-bottom: 3rem;
     }
   }
 
   .concept__img {
     max-width: 44rem;
     margin: 0;
-
+    margin-left: 20px;
     @include mq(sp){
       width: 100%;
-
+      margin: 0 auto;
     }
   }
 
@@ -129,7 +141,11 @@
   background-size: cover;
   padding-top: 10.4rem;
   padding-bottom: 5.5rem;
-
+  .inner {
+    @include mq(sp){
+      width: calc(100% - 8%);
+    }
+  }
   .title {
     color: #fff;
     justify-content: flex-end;
@@ -166,11 +182,15 @@
 .card {
   width: 32%;
   background-color: #fff;
-  margin-bottom: 2rem;
 
   @include mq(sp){
     width: 100%;
     max-width: 34rem;
+
+    & + & {
+      margin-top: 2rem;
+    }
+
   }
 
   &__img-wrapper {
@@ -210,6 +230,7 @@
     padding-bottom: 5.6rem;
   &__title {
     max-width: 1000px;
+    width: calc(100% - 8%);
     margin: 0 auto 8rem;
     letter-spacing: .1em;
     &::after {
@@ -229,6 +250,12 @@
   &__box {
     position: relative;
     width: 100%;
+
+    @include mq(sp){
+      & + & {
+        margin-top: 3rem;
+      }
+    }
   }
 
   &__txt {
@@ -253,6 +280,7 @@
 
   .bg__txt {
     max-width: 1200px;
+    width: calc(100% - 4%);
     margin: 0 auto;
     text-align: right;
     letter-spacing: .05em;
