@@ -26,6 +26,9 @@ img {
   max-width: 120rem;
   width: calc(100% - 4%);
   margin: 0 auto;
+  @include mq(sp){
+    width: calc(100% - 8%);
+  }
 }
 .section__inner {
   max-width: 100rem;

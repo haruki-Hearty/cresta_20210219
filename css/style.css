@@ -172,6 +172,12 @@ img {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .inner {
+    width: calc(100% - 8%);
+  }
+}
+
 .section__inner {
   max-width: 100rem;
   margin: 0 auto;
@@ -633,19 +639,37 @@ header end
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8rem;
 }
 
+@media (max-width: 768px) {
+  .card__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .card {
-  width: 32rem;
+  width: 32%;
   background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 34rem;
+  }
 }
 
 .card__img-wrapper {
@@ -668,6 +692,16 @@ header end
   text-align: justify;
   font-size: 1.6rem;
   line-height: 1.875;
+}
+
+.card + .card {
+  margin-left: 2%;
+}
+
+@media (max-width: 768px) {
+  .card + .card {
+    margin-left: 0;
+  }
 }
 
 /* card end*/

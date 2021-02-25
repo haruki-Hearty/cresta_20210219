@@ -153,15 +153,26 @@
 .card__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8rem;
+
+  @include mq(sp){
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .card {
-  width: 32rem;
+  width: 32%;
   background-color: #fff;
+  margin-bottom: 2rem;
+
+  @include mq(sp){
+    width: 100%;
+    max-width: 34rem;
+  }
+
   &__img-wrapper {
     position: relative;
     margin: 0;
@@ -180,7 +191,12 @@
     font-size: 1.6rem;
     line-height: 1.875;
   }
-
+  & + & {
+    margin-left: 2%;
+    @include mq(sp){
+      margin-left: 0;
+    }
+  }
 }
 /* card end*/
 
