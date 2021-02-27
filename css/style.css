@@ -421,6 +421,20 @@ header
   position: relative;
 }
 
+/* footer
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.footer {
+  height: 7.9rem;
+  text-align: center;
+  line-height: 7.9rem;
+}
+
+.footer .copy {
+  font-size: 1.4rem;
+}
+
+/* footer end
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 /* -------------------------------------------
 ボタン
 ---------------------------------------------- */
@@ -862,20 +876,6 @@ header
 }
 
 /* contact end
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-/* footer
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-.footer {
-  height: 7.9rem;
-  text-align: center;
-  line-height: 7.9rem;
-}
-
-.footer .copy {
-  font-size: 1.4rem;
-}
-
-/* footer end
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .u-hidden {
   display: none !important;
