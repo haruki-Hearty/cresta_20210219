@@ -157,7 +157,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 img {
@@ -376,7 +376,7 @@ header
     height: 3px;
     width: 25px;
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     position: absolute;
   }
   .header__buger-btn span:before {
@@ -415,15 +415,12 @@ header
   font-size: 2.4rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 2.5rem 0;
   position: relative;
 }
 
-/* -------------------------------------------
-header end
----------------------------------------------- */
 /* -------------------------------------------
 ボタン
 ---------------------------------------------- */
@@ -465,7 +462,7 @@ header end
   position: relative;
   background: url(../images/top/fv-bgi_01@2x.jpg) no-repeat center;
   background-size: cover;
-  color: #fff;
+  color: #FFFFFF;
   height: 100vh;
 }
 
@@ -627,7 +624,7 @@ header end
 /* works
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .works {
-  background: url(../../images/top/works-bgi@2x.jpg) no-repeat center;
+  background: url(../images/top/works-bgi@2x.jpg) no-repeat center;
   background-size: cover;
   padding-top: 10.4rem;
   padding-bottom: 5.5rem;
@@ -640,7 +637,7 @@ header end
 }
 
 .works .title {
-  color: #fff;
+  color: #FFFFFF;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
@@ -649,12 +646,12 @@ header end
 }
 
 .works .title::after {
-  background-color: #fff;
+  background-color: #FFFFFF;
   margin-left: 5.5rem;
 }
 
 .works .bg__txt {
-  color: #fff;
+  color: #FFFFFF;
   opacity: 0.1;
   letter-spacing: .05em;
 }
@@ -690,7 +687,7 @@ header end
 
 .card {
   width: 32%;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
@@ -800,7 +797,7 @@ header end
   height: 100%;
   font-size: 4rem;
   font-style: italic;
-  color: #fff;
+  color: #FFFFFF;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -832,14 +829,14 @@ header end
 /* contact
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .contact {
-  background: url(../../../images/top/contact-bgi@2x.jpg) no-repeat center;
+  background: url(../images/top/contact-bgi@2x.jpg) no-repeat center;
   background-size: cover;
   padding-top: 11rem;
   padding-bottom: 6.6rem;
 }
 
 .contact .title {
-  color: #fff;
+  color: #FFFFFF;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
@@ -849,18 +846,18 @@ header end
 }
 
 .contact .title::after {
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .contact__txt {
   margin-bottom: 4.5rem;
   font-size: 2rem;
-  color: #fff;
+  color: #FFFFFF;
   text-align: center;
 }
 
 .contact .bg__txt {
-  color: #fff;
+  color: #FFFFFF;
   letter-spacing: .05em;
 }
 

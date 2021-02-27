@@ -4,9 +4,9 @@
 ===========================*/
 .MV {
   position: relative;
-  background: url(../images/top/fv-bgi_01@2x.jpg) no-repeat center;
+  background: url(#{$bgpath}fv-bgi_01@2x.jpg) no-repeat center;
   background-size: cover;
-  color: #fff;
+  color: #{$colorWhite};
   height: 100vh;
 
   & .inner {
@@ -137,7 +137,7 @@
 /* works
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .works {
-  background: url(../../images/top/works-bgi@2x.jpg) no-repeat center;
+  background: url(#{$bgpath}works-bgi@2x.jpg) no-repeat center;
   background-size: cover;
   padding-top: 10.4rem;
   padding-bottom: 5.5rem;
@@ -147,17 +147,17 @@
     }
   }
   .title {
-    color: #fff;
+    color: #{$colorWhite};
     justify-content: flex-end;
     margin-bottom: 8rem;
     &::after {
-      background-color: #fff;
+      background-color: #{$colorWhite};
       margin-left: 5.5rem;
     }
   }
 
   .bg__txt {
-    color: #fff;
+    color: #{$colorWhite};
     opacity: 0.1;
     letter-spacing: .05em;
   }
@@ -181,7 +181,7 @@
 }
 .card {
   width: 32%;
-  background-color: #fff;
+  background-color: #{$colorWhite};
 
   @include mq(sp){
     width: 100%;
@@ -266,13 +266,13 @@
     height: 100%;
     font-size: 4rem;
     font-style: italic;
-    color: #fff;
+    color: #{$colorWhite};
     justify-content: center;
     align-items: center;
     z-index: 1;
 
     &:hover {
-      background: #282F35;
+      background: #{$colorNavyBlue};
       opacity: 0.7;
       transition: .3s;
     }
@@ -293,30 +293,30 @@
 /* contact
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 .contact {
-  background: url(../../../images/top/contact-bgi@2x.jpg) no-repeat center;
+  background: url(#{$bgpath}contact-bgi@2x.jpg) no-repeat center;
   background-size: cover;
   padding-top: 11rem;
   padding-bottom: 6.6rem;
 
   .title {
-    color: #fff;
+    color: #{$colorWhite};
     justify-content: flex-end;
     margin-bottom: 7.9rem;
     letter-spacing: .09em;
     &::after {
-      background-color: #fff;
+      background-color: #{$colorWhite};
     }
   }
 
   &__txt {
     margin-bottom: 4.5rem;
     font-size: 2rem;
-    color: #fff;
+    color: #{$colorWhite};
     text-align: center;
   }
 
   .bg__txt {
-    color: #fff;
+    color: #{$colorWhite};
     letter-spacing: .05em;
   }
 }
