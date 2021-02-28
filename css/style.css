@@ -470,8 +470,26 @@ header
 /* -------------------------------------------
 ボタン
 ---------------------------------------------- */
-header {
-  background: url(../images/top/contact-page-bgi@2x.jpg);
+.MV__contact {
+  position: relative;
+  background: url(../images/top/contact-page-bgi@2x.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 6rem;
+}
+
+.MV__contact .MV__txt {
+  display: block;
+}
+
+.MV__contact .MV__title {
+  margin-bottom: 3rem;
+  padding-top: 15rem;
+  font-style: italic;
+  color: #FFFFFF;
+}
+
+.MV__contact .bg__txt {
+  color: #FFFFFF;
 }
 
 /* MV

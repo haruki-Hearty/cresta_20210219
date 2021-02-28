@@ -8,7 +8,7 @@
   background-size: cover;
   color: #{$colorWhite};
   height: 100vh;
-
+  
   & .inner {
     @include mq(sp){
       padding-bottom: 0;
