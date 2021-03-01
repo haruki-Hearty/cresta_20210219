@@ -27,6 +27,9 @@
 .btn {
   text-align: center;
   margin-bottom: 7rem;
+  @include mq(sp){
+    margin-bottom: 4rem;
+  }
 }
 /* -------------------------------------------
 ボタン

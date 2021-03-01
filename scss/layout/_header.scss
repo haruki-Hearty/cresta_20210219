@@ -24,7 +24,7 @@ img {
 
 .inner {
   max-width: 120rem;
-  width: calc(100% - 8%);
+  width: calc(100% - 5%);
   margin: 0 auto;
 }
 .section__inner {
@@ -106,7 +106,7 @@ header
     background-color: #{$colorNavyBlue};
 
     @include mq(sp){
-      width: 90px;
+      width: 100px;
     }
   }
 }
@@ -145,7 +145,7 @@ header
     display: flex;
     align-items: center;
     // height: 96px;
-    padding: 2rem 0;
+    padding: 3rem 0;
     &-item + &-item {
       margin-left: 3rem;
     }
@@ -170,8 +170,8 @@ header
 
       &-btn {
         position: fixed;
-        top: 18px;
-        right: 10px;
+        top: 16px;
+        right: 0px;
         display: flex;
         height: 60px;
         width: 60px;
