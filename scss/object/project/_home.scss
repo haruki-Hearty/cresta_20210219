@@ -123,10 +123,10 @@
     @include mq(sp){
       width: 100%;
       margin: 0 auto 4rem;
-    }
-    & img {
-      height: 15rem;
-      object-fit: cover;
+      & img {
+        height: 150px;
+        object-fit: cover;
+      }
     }
   }
 

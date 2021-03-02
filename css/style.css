@@ -810,12 +810,11 @@ contact page
     width: 100%;
     margin: 0 auto 4rem;
   }
-}
-
-.concept .concept__img img {
-  height: 15rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  .concept .concept__img img {
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .concept .bg__txt {
