@@ -368,7 +368,14 @@ header
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    cursor: pointer;
     z-index: 90;
+  }
+  .header__buger-btn:hover, .header__buger-btn:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   .header__buger-btn span, .header__buger-btn span::before, .header__buger-btn span::after {
     content: '';
