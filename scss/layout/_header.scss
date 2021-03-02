@@ -72,7 +72,9 @@ header
 #header__buger-checkBox:checked ~ .header__buger-menu {
   left: 0;/*メニューを画面内へ*/
 }
-
+.header__buger-link:active ~ .header-menu {
+  left: 0;
+}
 
 
 
@@ -177,7 +179,6 @@ header
         width: 60px;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
         z-index: 90;
         &:hover,&:focus {
           background: rgba(255, 255, 255, 0.2);
@@ -215,14 +216,18 @@ header
   }
 
   &__list-sp {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    text-align: center;
   }/*メニューを開いた時のリストを中央に*/
-
+  &__buger-item {
+    display: inline;
+  }
   &__buger-link {
-    display: block;
-    width: 100%;
+    display: inline-block;
     text-align: center;
     font-size: 2.4rem;
     box-sizing: border-box;
@@ -230,5 +235,8 @@ header
     text-decoration: none;
     padding: 2.5rem 0;
     position: relative;
+    &:active {
+      width: 100%;
+    }
   }
 }

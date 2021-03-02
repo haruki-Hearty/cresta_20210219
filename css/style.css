@@ -232,6 +232,10 @@ header
   /*メニューを画面内へ*/
 }
 
+.header__buger-link:active ~ .header-menu {
+  left: 0;
+}
+
 /* -------------------------------------------
 ハンバーガーメニュー
 ---------------------------------------------- */
@@ -368,7 +372,6 @@ header
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    cursor: pointer;
     z-index: 90;
   }
   .header__buger-btn:hover, .header__buger-btn:focus {
@@ -409,15 +412,28 @@ header
 }
 
 .header__list-sp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  text-align: center;
+}
+
+.header__buger-item {
+  display: inline;
 }
 
 .header__buger-link {
-  display: block;
-  width: 100%;
+  display: inline-block;
   text-align: center;
   font-size: 2.4rem;
   -webkit-box-sizing: border-box;
@@ -426,6 +442,10 @@ header
   text-decoration: none;
   padding: 2.5rem 0;
   position: relative;
+}
+
+.header__buger-link:active {
+  width: 100%;
 }
 
 /* footer
