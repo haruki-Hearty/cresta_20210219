@@ -156,7 +156,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/jquery.bgswitcher.js"></script>
 <script>
-        jQuery(function($) {
+        $(function() {
             $('.bgimg-slider').bgSwitcher({
                 images: ['images/top/fv-bgi_01@2x.jpg','images/top/fv-bgi_02@2x.jpg','images/top/fv-bgi_03@2x.jpg'],
                 effect: "drop",
@@ -166,11 +166,11 @@
 </script><!-- スライダー -->
 
 <script>
-    jQuery(window).on('scroll', function () {
-        if (jQuery('.MV').height() < jQuery(this).scrollTop()) {
-        jQuery('.header').addClass('change-color'); }
+    $(window).on('scroll', function () {
+        if ($('.MV').height() < $(this).scrollTop()) {
+        $('.header').addClass('change-color'); }
         else {
-        jQuery('.header').removeClass('change-color'); }
+        $('.header').removeClass('change-color'); }
     });
 </script><!-- ヘッダー スクロールしたら色が変わる -->
 
