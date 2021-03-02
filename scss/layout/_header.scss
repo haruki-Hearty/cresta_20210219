@@ -72,9 +72,6 @@ header
 #header__buger-checkBox:checked ~ .header__buger-menu {
   left: 0;/*メニューを画面内へ*/
 }
-.header__buger-link:active ~ .header-menu {
-  left: 0;
-}
 
 
 
